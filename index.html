@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Could Not Be Completed | Mind Energies</title>
+    <meta name="description" content="Payment failure notice and retry portal for Mind Energies. Understand Your Mind. Transform Your Energy. Transform Your Life.">
+    
+    <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon / Brand Icon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body class="theme-dark">
+    <!-- Ambient Background Glow Elements -->
+    <div class="ambient-glow glow-top" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+    <div class="ambient-glow glow-accent" aria-hidden="true"></div>
+
+    <!-- Header with Brand & Theme Switcher -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#" class="brand-logo" id="brandLogo">
+                <div class="logo-icon-wrapper">
+                    <img src="assets/bat45-emblem.png" alt="BAT45 Breath Automation Technique" class="brand-logo-img">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">BAT45™</span>
+                    <span class="brand-badge">Mind Energies • Secure Checkout</span>
+                </div>
+            </a>
+
+            <div class="header-actions">
+                <button type="button" class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Theme" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Failure Card Container -->
+    <main class="main-wrapper" id="mainContent">
+        <section class="payment-card-container">
+            
+            <!-- Card Header & Status Icon -->
+            <div class="card-status-header">
+                <div class="status-icon-outer-ring">
+                    <div class="status-icon-inner-ring">
+                        <div class="status-icon-badge">
+                            <!-- Animated Warning / Cross Icon -->
+                            <svg class="status-cross-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5" class="circle-path"/>
+                                <path d="M16 16L32 32M32 16L16 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" class="cross-path"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-meta">
+                    <span class="status-pill status-pill-failed">
+                        <span class="status-dot"></span> Payment Incomplete
+                    </span>
+                </div>
+
+                <h1 class="main-title">Payment Could Not Be Completed</h1>
+                
+                <p class="reassurance-lead">
+                    Don’t worry — your payment has not been successfully completed.
+                </p>
+            </div>
+
+            <!-- Root Cause Notice Box -->
+            <div class="notice-box notice-connection">
+                <div class="notice-icon-box">
+                    <svg class="notice-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M1 1l22 22"/>
+                        <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+                        <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+                        <path d="M10.71 5.05A16 16 0 0 1 22.58 9"/>
+                        <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/>
+                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                        <line x1="12" y1="20" x2="12.01" y2="20"/>
+                    </svg>
+                </div>
+                <div class="notice-text-content">
+                    <p class="notice-main-text">
+                        It looks like the payment could not be processed due to a <strong>bank/network connection issue</strong>.
+                    </p>
+                    <p class="notice-sub-text">
+                        Please check your internet connection and <strong>try the payment again</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Transaction Summary Breakdown -->
+            <div class="transaction-summary-card">
+                <div class="summary-header">
+                    <div class="summary-brand-wrap">
+                        <img src="assets/bat45-emblem.png" alt="BAT45" class="summary-brand-icon">
+                        <div>
+                            <h2 class="summary-title">Transaction Details</h2>
+                            <span class="summary-brand-sub">Breath Automation Technique</span>
+                        </div>
+                    </div>
+                    <span class="status-tag">Draft / Pending</span>
+                </div>
+
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-label">Program / Service</span>
+                        <span class="summary-value highlight-value" id="displayProgramName">BAT45™ Breath Automation Technique</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Order Reference</span>
+                        <div class="ref-copy-group">
+                            <span class="summary-value code-font" id="displayOrderId">ME-89421-TX</span>
+                            <button type="button" class="btn-copy-ref" id="copyRefBtn" title="Copy Reference ID">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                </svg>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Attempted At</span>
+                        <span class="summary-value" id="displayTimestamp">Today at 12:53 PM</span>
+                    </div>
+
+                    <div class="summary-item">
+                        <span class="summary-label">Amount</span>
+                        <span class="summary-value amount-value" id="displayAmount">₹4,999.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Action & Retrying Area -->
+            <div class="action-cta-block">
+                <div class="cta-header-info">
+                    <div class="cta-badge">🔄 Please Try Again</div>
+                    <p class="cta-description">
+                        Your enrollment in <strong>BAT45™ Breath Automation Technique</strong> (Mind Energies) is saved. Click the button below to retry your payment securely.
+                    </p>
+                </div>
+
+                <button type="button" class="btn-try-again" id="tryPaymentAgainBtn">
+                    <span class="btn-glow-layer"></span>
+                    <span class="btn-content">
+                        <span class="btn-icon">
+                            <svg class="spin-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M23 4v6h-6"/>
+                                <path d="M1 20v-6h6"/>
+                                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                            </svg>
+                        </span>
+                        <span class="btn-text">TRY PAYMENT AGAIN</span>
+                    </span>
+                    <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+
+                <!-- Secondary Alternatives -->
+                <div class="secondary-actions">
+                    <button type="button" class="btn-secondary" id="changeMethodBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                        Choose Different Payment Method
+                    </button>
+                    <a href="#" class="link-return" id="returnHomeLink">
+                        Return to Program Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bank Deducted Warning Callout -->
+            <div class="bank-warning-card">
+                <div class="bank-warning-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                </div>
+                <div class="bank-warning-content">
+                    <h3 class="bank-warning-title">Money Deducted From Your Bank?</h3>
+                    <p class="bank-warning-text">
+                        If the amount has already been deducted from your bank account, <strong>please do not make another payment immediately</strong>. Wait for the transaction status to update (usually within 15–45 minutes) or contact our support team.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Troubleshooting Accordion -->
+            <div class="troubleshooting-section">
+                <h3 class="troubleshoot-title">Quick Troubleshooting</h3>
+                <div class="accordion-container">
+                    <details class="accordion-item" open>
+                        <summary class="accordion-header">
+                            <span class="acc-title">1. Why did the connection fail?</span>
+                            <span class="acc-chevron"></span>
+                        </summary>
+                        <div class="accordion-body">
+                            <p>Most connection drops occur when the banking server or UPI gateway takes longer than 60 seconds to respond, or during a temporary mobile network switch.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">
+                            <span class="acc-title">2. What if my bank debited the amount?</span>
+                            <span class="acc-chevron"></span>
+                        </summary>
+                        <div class="accordion-body">
+                            <p>Banks automatically reconcile unresolved payments. If the funds do not reach our system, your bank will auto-refund the full amount to your original payment source within 2 to 4 business days.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion-item">
+                        <summary class="accordion-header">
+                            <span class="acc-title">3. Recommended next steps</span>
+                            <span class="acc-chevron"></span>
+                        </summary>
+                        <div class="accordion-body">
+                            <ul class="steps-list">
+                                <li>Ensure you have a strong Wi-Fi or 4G/5G connection.</li>
+                                <li>If using UPI, approve the collect request within the 5-minute timer.</li>
+                                <li>Try an alternative payment method like Credit Card, Debit Card, or Net Banking.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Support & Assistance Section -->
+            <div class="support-section">
+                <div class="support-header">
+                    <h3 class="support-title">Need Help?</h3>
+                    <p class="support-subtitle">
+                        If you continue to face difficulty, please contact <strong>Mind Energies Support</strong> and share your payment/transaction details.
+                    </p>
+                </div>
+
+                <div class="support-channels-grid">
+                    <a href="https://wa.me/?text=Hi%20Mind%20Energies%20Support,%20my%20payment%20failed%20for%20Order%20ME-89421-TX." target="_blank" rel="noopener noreferrer" class="support-channel-card" id="whatsappSupportBtn">
+                        <div class="channel-icon channel-whatsapp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1 1.13-.17 1.47-.92 1.7-1.22.23-.3.23-.56.16-.69z"/>
+                            </svg>
+                        </div>
+                        <div class="channel-info">
+                            <span class="channel-name">WhatsApp Chat</span>
+                            <span class="channel-desc">Instant reply within minutes</span>
+                        </div>
+                        <span class="channel-arrow">→</span>
+                    </a>
+
+                    <a href="mailto:support@mindenergies.com?subject=Payment%20Issue%20Order%20ME-89421-TX&body=Hi%20Mind%20Energies%20Team,%0A%0AMy%20payment%20could%20not%20be%20completed.%0AOrder%20Reference:%20ME-89421-TX%0AAmount:%20INR%204,999%0A%0APlease%20assist." class="support-channel-card" id="emailSupportBtn">
+                        <div class="channel-icon channel-email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="channel-info">
+                            <span class="channel-name">Email Support</span>
+                            <span class="channel-desc">support@mindenergies.com</span>
+                        </div>
+                        <span class="channel-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer / Brand Tagline -->
+            <footer class="card-footer">
+                <div class="brand-signature">
+                    <div class="footer-logo-wrap">
+                        <img src="assets/bat45-main-transparent.png" alt="BAT45 Breath Automation Technique" class="footer-brand-logo">
+                    </div>
+                    <p class="signature-tagline">
+                        <em>Make Life So Simple™ • Daily 4 Minutes 5 Times</em>
+                    </p>
+                    <p class="signature-subtext">
+                        MIND ENERGIES • EXPLORE • ALIGN • TRANSFORM
+                    </p>
+                </div>
+                <div class="footer-meta">
+                    <span>🔒 256-Bit SSL Encrypted & Bank-Grade Security</span>
+                </div>
+            </footer>
+
+        </section>
+    </main>
+
+    <!-- Payment Retry & Method Switcher Modal -->
+    <div class="modal-backdrop" id="retryModal" aria-hidden="true">
+        <div class="modal-dialog" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+            <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">×</button>
+            
+            <div class="modal-header">
+                <div class="modal-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="5" width="20" height="14" rx="2"/>
+                        <line x1="2" y1="10" x2="22" y2="10"/>
+                    </svg>
+                </div>
+                <h3 class="modal-title" id="modalTitle">Select Payment Method</h3>
+                <p class="modal-subtitle">Choose a fast & reliable checkout option for Mind Energies</p>
+            </div>
+
+            <div class="modal-methods-list">
+                <button type="button" class="method-option-btn selected" data-method="upi">
+                    <div class="method-icon-box">⚡</div>
+                    <div class="method-text">
+                        <span class="method-label">UPI Instant Pay (GPay, PhonePe, Paytm)</span>
+                        <span class="method-hint">Recommended • Instant Settlement</span>
+                    </div>
+                    <span class="method-radio"></span>
+                </button>
+
+                <button type="button" class="method-option-btn" data-method="card">
+                    <div class="method-icon-box">💳</div>
+                    <div class="method-text">
+                        <span class="method-label">Credit / Debit Card</span>
+                        <span class="method-hint">Visa, Mastercard, RuPay, Amex</span>
+                    </div>
+                    <span class="method-radio"></span>
+                </button>
+
+                <button type="button" class="method-option-btn" data-method="netbanking">
+                    <div class="method-icon-box">🏛️</div>
+                    <div class="method-text">
+                        <span class="method-label">Net Banking</span>
+                        <span class="method-hint">All Major Indian Banks Supported</span>
+                    </div>
+                    <span class="method-radio"></span>
+                </button>
+            </div>
+
+            <div class="modal-action-row">
+                <button type="button" class="btn-modal-proceed" id="modalProceedBtn">
+                    Proceed to Secure Gateway
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copy Toast Notification -->
+    <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"/>
+        </svg>
+        <span id="toastMessage">Order Reference copied to clipboard!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
