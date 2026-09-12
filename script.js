@@ -17,10 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         supportEmail: urlParams.get('email') || 'support@mindenergies.com',
         supportPhone: urlParams.get('phone') || '+917889631295',
         timestamp: urlParams.get('time') || null,
-        appointmentUrl: urlParams.get('appointment_url') || urlParams.get('appointment') || 'https://mindenergies.in/'
+        appointmentUrl: urlParams.get('appointment_url') || urlParams.get('appointment') || 'https://mindenergies.in/',
+        paymentUrl: urlParams.get('payment_url') || urlParams.get('pay_url') || urlParams.get('pay_link') || urlParams.get('retry_url') || '#'
     };
 
     // 2. DOM Elements
+    const payNowBtn = document.getElementById('payNowBtn');
     const bookAppointmentBtn = document.getElementById('bookAppointmentBtn');
     const bookServicesBtn = document.getElementById('bookServicesBtn');
     const displayOrderId = document.getElementById('displayOrderId');
@@ -58,6 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             displayTimestamp.textContent = `Today at ${timeString}`;
         }
+    }
+
+    if (payNowBtn && config.paymentUrl && config.paymentUrl !== '#') {
+        payNowBtn.href = config.paymentUrl;
     }
 
     if (bookAppointmentBtn && config.appointmentUrl && config.appointmentUrl !== '#') {

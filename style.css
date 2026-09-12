@@ -662,16 +662,28 @@ body.theme-light .moon-icon { display: block; }
     transform: translateY(1px);
 }
 
-.btn-book-appointment {
+.btn-pay-now {
     background: var(--primary-gradient);
     color: #ffffff;
-    box-shadow: 0 10px 25px rgba(244, 63, 94, 0.4);
+    box-shadow: 0 10px 25px rgba(244, 63, 94, 0.45);
+}
+
+.btn-pay-now:hover {
+    background: var(--primary-gradient-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(244, 63, 94, 0.6);
+}
+
+.btn-book-appointment {
+    background: linear-gradient(135deg, #059669 0%, #10b981 50%, #14b8a6 100%);
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.35);
 }
 
 .btn-book-appointment:hover {
-    background: var(--primary-gradient-hover);
+    background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #2dd4bf 100%);
     transform: translateY(-2px);
-    box-shadow: 0 14px 30px rgba(244, 63, 94, 0.55);
+    box-shadow: 0 14px 30px rgba(16, 185, 129, 0.5);
 }
 
 .btn-book-services {
