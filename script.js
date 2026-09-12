@@ -16,10 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
         retryUrl: urlParams.get('retry_url') || urlParams.get('redirect_url') || '',
         supportEmail: urlParams.get('email') || 'support@mindenergies.com',
         supportPhone: urlParams.get('phone') || '+919876543210',
-        timestamp: urlParams.get('time') || null
+        timestamp: urlParams.get('time') || null,
+        appointmentUrl: urlParams.get('appointment_url') || urlParams.get('appointment') || '#'
     };
 
     // 2. DOM Elements
+    const bookAppointmentBtn = document.getElementById('bookAppointmentBtn');
+    const bookServicesBtn = document.getElementById('bookServicesBtn');
     const displayOrderId = document.getElementById('displayOrderId');
     const displayProgramName = document.getElementById('displayProgramName');
     const displayAmount = document.getElementById('displayAmount');
@@ -55,6 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             displayTimestamp.textContent = `Today at ${timeString}`;
         }
+    }
+
+    if (bookAppointmentBtn && config.appointmentUrl && config.appointmentUrl !== '#') {
+        bookAppointmentBtn.href = config.appointmentUrl;
     }
 
     // Dynamic Support Links
