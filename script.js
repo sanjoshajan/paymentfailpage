@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         supportPhone: urlParams.get('phone') || '+917889631295',
         timestamp: urlParams.get('time') || null,
         appointmentUrl: urlParams.get('appointment_url') || urlParams.get('appointment') || 'https://mindenergies.in/',
+        servicesUrl: urlParams.get('services_url') || urlParams.get('service_url') || 'https://smartpay.easebuzz.in/222837/e6fa33fdfd874360895c81960d4ace6c',
         paymentUrl: urlParams.get('payment_url') || urlParams.get('pay_url') || urlParams.get('pay_link') || urlParams.get('retry_url') || '#'
     };
 
@@ -68,6 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (bookAppointmentBtn && config.appointmentUrl && config.appointmentUrl !== '#') {
         bookAppointmentBtn.href = config.appointmentUrl;
+    }
+
+    if (bookServicesBtn && config.servicesUrl) {
+        bookServicesBtn.href = config.servicesUrl;
     }
 
     // Dynamic Support Links
