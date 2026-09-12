@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currency: urlParams.get('currency') || '₹',
         retryUrl: urlParams.get('retry_url') || urlParams.get('redirect_url') || '',
         supportEmail: urlParams.get('email') || 'support@mindenergies.com',
-        supportPhone: urlParams.get('phone') || '+919876543210',
+        supportPhone: urlParams.get('phone') || '+917889631295',
         timestamp: urlParams.get('time') || null,
         appointmentUrl: urlParams.get('appointment_url') || urlParams.get('appointment') || 'https://mindenergies.in/'
     };
