@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         supportEmail: urlParams.get('email') || 'support@mindenergies.com',
         supportPhone: urlParams.get('phone') || '+919876543210',
         timestamp: urlParams.get('time') || null,
-        appointmentUrl: urlParams.get('appointment_url') || urlParams.get('appointment') || '#'
+        appointmentUrl: urlParams.get('appointment_url') || urlParams.get('appointment') || 'https://mindenergies.in/'
     };
 
     // 2. DOM Elements
